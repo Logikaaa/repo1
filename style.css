@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.repo {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.xz {
+    width: 300px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0;
+    gap: 30px;
+}
+
+.osn, .ost, .osv {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    padding: 10px;
+}
+
+.osn { color: #FFB405; }
+.ost, .osv { color: #FF5005; }
+
+/* --- БІЧНА НАВІГАЦІЯ В СТИЛІ ВИЇЖДЖАННЯ --- */
+.clas {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.clas a {
+    position: relative;
+    left: -90px;
+    width: 90px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+    transition: left 0.3s ease;
+}
+
+.clas a:hover {
+    left: 0;
+}
+
+.about { background-color: #000000; }
+.blog { background-color: #000000; }
+
+/* --- БЛОКИ У ШАХМАТНОМУ ПОРЯДКУ --- */
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 40px auto;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 128, 0, 0.4);
+    transform: rotate(-1.5deg);
+}
+
+.block:nth-child(even) {
+    flex-direction: row-reverse;
+    transform: rotate(1.5deg);
+}
+
+.block img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    transform: rotate(-1deg);
+}
+
+.block:nth-child(even) img {
+    transform: rotate(1deg);
+}
+
+.block p {
+    width: 70%;
+    color: #FF8605;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.5;
+    transform: rotate(-1deg);
+}
+
+.block:nth-child(even) p {
+    transform: rotate(1deg);
+}
+
+.clas {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    background: transparent; /* <--- прибирає фон */
+    pointer-events: none;     /* щоб не блокував елементи під собою */
+}
+
+.clas a {
+    pointer-events: auto;
+    color: #FFB405;
+}
+
+.oin {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    transform: rotate(-1deg);
+}
+
+footer{
+    color: yellow;
+}
+
+footer p{
+    width: 29%;
+    margin-left:20px;
+}
